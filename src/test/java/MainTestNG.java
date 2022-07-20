@@ -38,4 +38,11 @@ public class MainTestNG {
         System.out.println("Ticket is lucky.");
     }
 
+    @Test
+    public void checkTicketLength (){
+        int actual = Main.countTicketLength(0,1,0,1,0,0);
+        Assert.assertEquals(actual, 6, "Ticket length is invalid");
+        System.out.println("Ticket length is 6 numbers.");
+    }
+
 }
