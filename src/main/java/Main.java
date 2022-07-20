@@ -1,4 +1,6 @@
 public class Main {
+
+
     public static void main(String[] args) {
         System.out.println(checkIfTicketLucky(1, 2, 4, 4, 1, 1));
     }
