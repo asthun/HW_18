@@ -25,9 +25,8 @@ public class MainTestNG {
 
     @Test
     public void checkTicketNumberNotZeros (){
-        int expected = 1;
-        int actual = Main.countTicketNumbers(0,0,0,0,0,0);
-        Assert.assertTrue(actual >= expected, "All zeros.");
+        int actual = Main.countTicketNumbers(0,0,0,0,0,1);
+        Assert.assertTrue (actual > 0, "All zeros.");
         System.out.println("Not all zeros.");
     }
 
