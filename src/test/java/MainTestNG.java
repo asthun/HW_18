@@ -13,6 +13,11 @@ public class MainTestNG {
         System.out.println("After all tests ....");
     }
 
+    @BeforeSuite
+    public  void printBeforeSuit() {
+        System.out.println("Before suit");
+    }
+
     @BeforeMethod
     public void printBeforeMethod () {
         System.out.println("This is text before each test");
@@ -25,7 +30,7 @@ public class MainTestNG {
 
     @Test
     public void checkTicketNumberNotZeros (){
-        int actual = Main.countTicketNumbers(0,0,0,0,0,1);
+        int actual = Main.countTicketNumbers(0,0,0,0,0,0);
         Assert.assertTrue (actual > 0, "All zeros.");
         System.out.println("Not all zeros.");
     }
